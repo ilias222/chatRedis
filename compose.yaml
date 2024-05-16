@@ -1,0 +1,17 @@
+services:
+  chat:
+    build: .
+
+  redis-master:
+    build: ./redisServe
+
+
+  redis-slave:
+    build: ./redisServe/slave1
+
+
+  redis-slave2:
+    build: ./redisServe/slave2
+
+  # redis-sentinel-master:
+  #   build: ./redisServe/sentinel_master
